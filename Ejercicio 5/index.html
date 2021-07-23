@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio HTML 3</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  
+  <div class="contenedor">
+      <form action="http://www.google.com" class="formulario" method="GET">
+        <fieldset>
+            <legend>Información personal</legend>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="user_name" required="required" autofocus="autofocus">
+            
+            <br><br> 
+            <label for="mail">Correo electrónico</label>
+            <input type="email" id="mail" name="user_mail" required="required">
+            
+        </fieldset>   
+        <br> 
+
+        <fieldset>
+            <legend>Uniforme Resource Locator</legend>
+            <label for="url">URL</label>
+            <input type="url" id="url" name="user_url" required="required" placeholder="Escribe la URL de tu página web personal" size="35" maxlength="35">  
+        </fieldset>
+        <br>   
+        
+        <fieldset>
+            <legend>Más información</legend>
+            <label for="date">Fecha</label>
+            <input type="date" id="date" name="user_date">
+            <label for="time">Tiempo</label>
+            <input type="time" id="time" name="user_time">
+            
+            <br><br> 
+            <label for="birthdaytime">Fecha y hora</label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+            
+            <br><br> 
+            <label for="month">Mes</label>
+            <input type="month" id="month" name="user_month">
+            
+            <br><br> 
+            <label for="week">Semana</label>
+            <input type="week" id="week" name="user_week">
+        </fieldset>    
+        <br> 
+        
+        <fieldset>
+            <legend>Varios</legend>
+            <label for="number">Número</label>
+            <input type="number" id="number" name="user_number" min="-10" max="10">
+            
+            <br><br> <!-- erase after css -->
+            <label for="tel">Teléfono</label>
+            <input type="tel" id="tel" name="user_tel" placeholder="+34 643671832" disabled>
+            
+            <br><br> <!-- erase after css -->
+            <label for="search">Término de búsqueda</label>
+            <input type="search" id="search" name="user_search" disabled>
+            
+            <br><br> <!-- erase after css -->
+            <label for="color">Color favorito</label>
+            <input type="color" id="color" name="user_color">   
+            
+            <br><br> <!-- erase after css -->
+            <div>
+                <input type="button" value="Envío">  
+            </div>
+        </fieldset>
+        
+    </form>
+</div>
+</body>
+</html>

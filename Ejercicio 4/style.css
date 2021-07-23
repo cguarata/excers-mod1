@@ -1,0 +1,58 @@
+ul.lista ul{
+    display: flex;
+    margin: 0;
+}
+ul.lista li:nth-child(1)::after {
+    content: " 🙈";
+  }
+ul.lista li:nth-child(2)::after {
+    content: " 🐱";
+  }
+ul.lista li:nth-child(3)::after {
+    content: " 🦁";
+  }
+ul.lista li:nth-child(4)::after {
+    content: " 🐶";
+  }
+ul.lista li:nth-child(5)::after {
+    content: " 🦊";
+  }
+ul.lista  li:nth-child(6)::after {
+    content: " 🦄";
+  }
+
+li:lang(en) {
+    font-size: 28px;
+    text-transform: uppercase;
+
+}  
+ul.lista li {
+    display: inline-block;
+    background: rgb(221, 221, 221);
+    padding: 10px;
+    margin: 0 5px 0 5px;
+    font-size: 14px;
+}
+ul.lista li:last-child {
+    background: rgb(53, 139, 252);
+    color: white;
+    
+  }
+ul.lista li:nth-child(odd) {
+    text-decoration: underline;
+    text-decoration-color: green;
+}
+
+
+
+
+
+ul#provincias li {
+    font-size: 14px;
+    list-style: upper-roman;
+    color: red;
+}
+
+ul#provincias li:nth-child(2) {
+    list-style: square;
+}

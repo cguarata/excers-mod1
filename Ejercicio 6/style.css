@@ -1,0 +1,161 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+/* header */
+header {
+    background: black;
+    color: white;
+    padding: 2rem;
+}
+header p:first-of-type {
+    font-size: 0.9rem;
+    color: white;
+
+}
+/* heading elements */
+h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+h2 {
+    font-size: 2.3rem;
+    font-weight: 200;
+    padding-bottom: 10px;
+}
+h3 {
+    font-size: 1.8rem;
+    color: rgb(111, 111, 111);
+    padding: 20px 20px 10px 0px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(139, 139, 139);
+}
+
+p {
+    font-size: 0.9rem;
+    line-height: 1.3em;
+}
+
+/* main & */
+main {
+    padding: 0 15% 40px 15%;
+}
+.form_main {
+    margin-top: 1.2em;
+
+}
+
+/* image */
+
+.img{
+    width:250px;
+    height:230px;
+    margin: 0 0 1rem 1rem;
+    object-fit: cover; object-position: 35% 20%;
+  }
+.cont-img {
+    float: right;
+    margin-left: 1rem;
+}
+
+/* forms styles */
+.form-control {
+    height: 25px;
+    width: 100%;
+    background: rgb(114, 114, 114);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    border-radius: 2px;
+    box-shadow: none !important;
+    border: none;
+    padding-top: 1rem;
+}  
+
+.form-controls {
+    height: 200px;
+    width: 100%;
+    background: rgb(114, 114, 114);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    border-radius: 2px;
+    box-shadow: none !important;
+    border: none;
+}  
+
+fieldset {
+    border: none;
+}
+
+input {
+    padding:20px;
+    margin:10px 0; 
+    clear: both;
+}
+
+textarea {
+    overflow: auto;
+    display: inline-block;
+    width: 100%;
+    height:200px;
+    outline: none;
+    background: rgb(114, 114, 114);
+    color:white;
+    padding:20px;
+    margin:10px 0; 
+    clear: both;
+    resize:none;
+}
+label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: .6rem;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-decoration: none;
+    margin: .5rem 0rem;
+    cursor: pointer;
+
+}
+/* media queries */
+@media screen and (max-width: 600px) {
+    header {
+       padding: 3rem;
+       padding-bottom: 5rem;
+    }
+
+    main {
+        padding: 0 10% 40px 10%;
+    }
+
+    header p:first-of-type {
+        padding-top: 1rem;
+        text-align: center;      
+    } 
+    h1, h2 {
+        text-align: center;
+    }
+    
+    .img{
+        width:380px;
+        height:200px ;
+        margin: 0 0 1rem 0rem;
+        max-width:390px;
+        object-fit: cover; object-position: 35% 35%;
+    }
+
+    .cont-img {
+        float:left;    
+        margin-left: 0;
+    }
+  }
